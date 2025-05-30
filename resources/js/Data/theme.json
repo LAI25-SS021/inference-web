@@ -1,0 +1,16 @@
+{
+    "token": {
+        "fontSize": 14,
+        "colorPrimary": "#1890ff",
+        "colorInfo": "#1890ff"
+    },
+    "components": {
+        "Button": {
+            "paddingInlineLG": 20,
+            "fontSizeLG": 14
+        },
+        "Input": {
+            "inputFontSizeLG": 14
+        }
+    }
+}
