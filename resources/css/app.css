@@ -5,3 +5,8 @@
 * {
     font-family: 'Lato', sans-serif !important;
 }
+
+.ant-btn-icon {
+    display: flex;
+    align-items: center;
+}

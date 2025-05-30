@@ -12,7 +12,11 @@ export default function Home() {
 
   const submit = (status) => {
     if (status) {
-      setSubmitted(true);
+      setLoading(true);
+      setTimeout(() => {
+        setSubmitted(true);
+        setLoading(false);
+      }, 2000);
     } else {
       setImage(false);
       setSubmitted(false);
@@ -108,6 +112,7 @@ export default function Home() {
                 size="large"
                 disabled={!image}
                 onClick={() => submit(true)}
+                loading={loading}
                 block
               >
                 Submit
