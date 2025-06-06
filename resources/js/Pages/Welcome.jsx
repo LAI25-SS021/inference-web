@@ -1,6 +1,7 @@
+import NavigationBar from '@/Components/NavigationBar';
+import SkinTypeCard from '@/Components/SkinTypeCard';
 import { Head } from '@inertiajs/react';
 import { Button } from 'antd';
-import SkinTypeCard from '../Components/SkinTypeCard';
 
 export default function Welcome() {
   const tagline = 'Cek Tipe Kulit Wajah Gratis Online';
@@ -8,40 +9,9 @@ export default function Welcome() {
   return (
     <>
       <Head title={tagline} />
-      <header className="h-[14vh]py-4 relative">
-        <div className="fixed left-0 right-0 top-0 bg-slate-50">
-          <nav className="flex flex-col items-center">
-            <div className="text-2xl">RupaKoe</div>
-            <ol className="flex space-x-4">
-              <li>
-                {' '}
-                <a className="link" href="#">
-                  Tentang Kami
-                </a>
-              </li>
-              <li>|</li>
-              <li>
-                {' '}
-                <a className="link" href="#">
-                  Coba Sekarang
-                </a>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </header>
-      {/* <header className="flex h-[12vh] flex-col items-center space-y-2 bg-slate-50 py-4">
-        <div className="text-2xl">RupaKoe</div>
-        <nav>
-          <ol className="flex space-x-4">
-            <li>Tentang Kami</li>
-            <li>|</li>
-            <li>Coba Sekarang</li>
-          </ol>
-        </nav>
-      </header> */}
-      <main>
-        <section className="flex h-[90vh] items-center justify-center bg-slate-100 bg-[url(assets/images/RupaKoe2.png)] bg-cover">
+      <NavigationBar />
+      <main className="z-0">
+        <section className="flex min-h-screen items-center justify-center bg-slate-100 bg-[url(assets/images/RupaKoe2.png)] bg-cover">
           <article className="w-2/4 space-y-8">
             <h1 className="text-4xl tracking-wide">RupaKoe: {tagline}</h1>
             <p className="text-lg">
@@ -50,10 +20,7 @@ export default function Welcome() {
               dengan pemahaman bahwa jika jenis kulit berbeda, maka rekomendasi produk perawatan
               kulit juga harus disesuaikan.
             </p>
-            <Button type="primary">Coba Sekarang</Button>
-            {/* <button className="block rounded-lg bg-blue-500 px-6 py-3 text-gray-50">
-              Coba Sekarang
-            </button> */}
+            <Button type="primary">Coba Sekarang</Button>{' '}
           </article>
         </section>
         <section className="flex h-[120vh] items-center justify-center bg-slate-100">

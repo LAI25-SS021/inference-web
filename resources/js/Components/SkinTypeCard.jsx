@@ -2,7 +2,7 @@ import { Card } from 'antd';
 
 export default function SkinTypeCard() {
   return (
-    <div className="flex justify-between space-x-5">
+    <div className="z-0 flex justify-between space-x-5">
       <Card className="max-w-80 space-y-3 rounded-xl shadow-md">
         <p className="pb-4 text-center text-xl font-medium">Kering</p>
         <img alt="dry skin" src="/assets/images/dry_skin.jpg" className="h-[200px] w-full" />
