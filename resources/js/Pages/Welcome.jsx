@@ -1,12 +1,36 @@
 import { Head } from '@inertiajs/react';
+import { Button } from 'antd';
+import SkinTypeCard from '../Components/SkinTypeCard';
 
 export default function Welcome() {
-  const tagline = 'Cek Kulit Wajah Gratis Online';
+  const tagline = 'Cek Tipe Kulit Wajah Gratis Online';
 
   return (
     <>
       <Head title={tagline} />
-      <header className="flex h-[10vh] flex-col items-center space-y-2 bg-slate-50 py-4">
+      <header className="h-[14vh]py-4 relative">
+        <div className="fixed left-0 right-0 top-0 bg-slate-50">
+          <nav className="flex flex-col items-center">
+            <div className="text-2xl">RupaKoe</div>
+            <ol className="flex space-x-4">
+              <li>
+                {' '}
+                <a className="link" href="#">
+                  Tentang Kami
+                </a>
+              </li>
+              <li>|</li>
+              <li>
+                {' '}
+                <a className="link" href="#">
+                  Coba Sekarang
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </header>
+      {/* <header className="flex h-[12vh] flex-col items-center space-y-2 bg-slate-50 py-4">
         <div className="text-2xl">RupaKoe</div>
         <nav>
           <ol className="flex space-x-4">
@@ -15,92 +39,31 @@ export default function Welcome() {
             <li>Coba Sekarang</li>
           </ol>
         </nav>
-      </header>
+      </header> */}
       <main>
-        <section className="flex h-[90vh] items-center justify-center bg-slate-100">
+        <section className="flex h-[90vh] items-center justify-center bg-slate-100 bg-[url(assets/images/RupaKoe2.png)] bg-cover">
           <article className="w-2/4 space-y-8">
             <h1 className="text-4xl tracking-wide">RupaKoe: {tagline}</h1>
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, laboriosam perspiciatis
-              nemo, inventore soluta ipsum molestias, commodi consequatur repellat aliquam pariatur
-              error minus rem quisquam distinctio aperiam dicta! Pariatur, eos? Ratione velit vel
-              illo eos magnam tenetur consequuntur veniam necessitatibus quasi saepe, similique
-              temporibus suscipit corrupti distinctio sunt dicta quibusdam incidunt quos?
+              RupaKoe adalah aplikasi berbasis kecerdasan buatan (AI) yang mampu mendeteksi jenis
+              kulit wajah dari citra gambar. Alat analisis jenis kulit gratis ini dikembangkan
+              dengan pemahaman bahwa jika jenis kulit berbeda, maka rekomendasi produk perawatan
+              kulit juga harus disesuaikan.
             </p>
-            <button className="block rounded-lg bg-blue-500 px-6 py-3 text-gray-50">
+            <Button type="primary">Coba Sekarang</Button>
+            {/* <button className="block rounded-lg bg-blue-500 px-6 py-3 text-gray-50">
               Coba Sekarang
-            </button>
+            </button> */}
           </article>
         </section>
-        <section className="flex h-[100vh] items-center justify-center bg-slate-100">
+        <section className="flex h-[120vh] items-center justify-center bg-slate-100">
           <article className="w-3/5 space-y-12">
             <div className="mx-auto w-fit space-y-4 border-b-2 border-gray-300 px-4 pb-4">
               <h2 className="text-center text-3xl tracking-wide">
-                RupaKoe Menganalisa 3 Masalah Kulit Anda
+                RupaKoe Menganalisa 3 Jenis Kulit Wanita
               </h2>
             </div>
-            <div className="flex justify-between">
-              <div className="max-w-80 bg-white">
-                <div className="img">
-                  <div className="flex h-80 w-80 items-center justify-center bg-gray-200 text-white">
-                    Placeholder
-                  </div>
-                </div>
-                <div className="space-y-2 p-4">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nihil, assumenda
-                    sit beatae totam, similique culpa ut enim nobis odit corporis consequuntur
-                    consectetur fugiat corrupti illum dolore deleniti animi optio!
-                  </p>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero accusamus
-                    necessitatibus itaque, iusto asperiores in architecto dolorem repudiandae
-                    voluptatibus sint nam hic rem doloremque similique amet sapiente mollitia
-                    obcaecati? Molestiae.
-                  </p>
-                </div>
-              </div>
-              <div className="max-w-80 bg-white">
-                <div className="img">
-                  <div className="flex h-80 w-80 items-center justify-center bg-gray-200 text-white">
-                    Placeholder
-                  </div>
-                </div>
-                <div className="space-y-2 p-4">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nihil, assumenda
-                    sit beatae totam, similique culpa ut enim nobis odit corporis consequuntur
-                    consectetur fugiat corrupti illum dolore deleniti animi optio!
-                  </p>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero accusamus
-                    necessitatibus itaque, iusto asperiores in architecto dolorem repudiandae
-                    voluptatibus sint nam hic rem doloremque similique amet sapiente mollitia
-                    obcaecati? Molestiae.
-                  </p>
-                </div>
-              </div>
-              <div className="max-w-80 bg-white">
-                <div className="img">
-                  <div className="flex h-80 w-80 items-center justify-center bg-gray-200 text-white">
-                    Placeholder
-                  </div>
-                </div>
-                <div className="space-y-2 p-4">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nihil, assumenda
-                    sit beatae totam, similique culpa ut enim nobis odit corporis consequuntur
-                    consectetur fugiat corrupti illum dolore deleniti animi optio!
-                  </p>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero accusamus
-                    necessitatibus itaque, iusto asperiores in architecto dolorem repudiandae
-                    voluptatibus sint nam hic rem doloremque similique amet sapiente mollitia
-                    obcaecati? Molestiae.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <SkinTypeCard></SkinTypeCard>
           </article>
         </section>
         <section className="flex h-[100vh] items-center justify-center bg-slate-100">

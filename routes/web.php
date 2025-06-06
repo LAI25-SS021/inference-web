@@ -10,7 +10,7 @@ use Inertia\Inertia;
 Route::get('/', fn () => redirect(route('welcome')));
 
 Route::get('home', [HomeController::class, 'index'])->name('home');
-Route::get('welcome', fn () => inertia('Welcome'))->name('welcome');
+Route::get('welcome', fn () => inertia(component: 'Welcome'))->name('welcome');
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/dashboard', function () {
