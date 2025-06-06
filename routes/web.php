@@ -7,7 +7,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', fn () => redirect(route('home')));
+Route::get('/', fn () => redirect(route('welcome')));
 
 Route::get('home', [HomeController::class, 'index'])->name('home');
 Route::get('welcome', fn () => inertia('Welcome'))->name('welcome');
